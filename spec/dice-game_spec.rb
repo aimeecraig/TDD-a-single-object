@@ -14,5 +14,7 @@ describe 'roll' do
     expect(roll).to be <= 6
   end
 
-  
+  it 'returns any number of dice at the same time' do
+    expect(roll).to be_a(Array)
+  end
 end
