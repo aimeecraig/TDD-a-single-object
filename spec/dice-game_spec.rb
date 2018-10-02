@@ -17,4 +17,8 @@ describe 'roll' do
   it 'returns any number of dice at the same time' do
     expect(roll).to be_a(Array)
   end
+
+  it 'returns the value of each dice' do
+    expect(roll).to be_a(Array)
+  end
 end
