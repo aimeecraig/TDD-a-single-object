@@ -1,5 +1,7 @@
 def roll(x = 1)
+  arr = []
   x.times do |roll|
-    return 4
+    arr << [1..6].sample
   end
+  arr
 end
