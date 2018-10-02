@@ -1,4 +1,4 @@
-require 'dice-game'
+require 'dice-game.rb'
 
 describe 'roll' do
   it 'returns a dice roll' do
