@@ -19,6 +19,6 @@ describe 'roll' do
   end
 
   it 'returns the value of each dice' do
-    expect(roll).to be_a(Array)
+    expect(roll(5)).to be_a(Array)
   end
 end
