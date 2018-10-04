@@ -2,6 +2,7 @@ class Game
 end
 
 class Dice
+  srand(1337)
   def roll(x = 1)
     if x == 0
       raise "Dice has not been rolled"

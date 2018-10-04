@@ -38,4 +38,9 @@ describe Dice do
   it 'raises an error when Dice.roll is passed a floating point number' do
     expect{subject.roll(3.5)}.to raise_error("Dice cannot be rolled partial times")
   end
+
+  it 'returns a random number' do
+    srand(1337)
+    expect(subject.roll).to eq 6
+  end
 end
