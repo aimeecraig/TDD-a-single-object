@@ -12,7 +12,7 @@ class Dice
     end
 
     rolls = []
-    x.times { rolls << rand(6) }
+    x.times { rolls << rand(1..6) }
     rolls.length == 1 ? rolls[0] : rolls
   end
 end
