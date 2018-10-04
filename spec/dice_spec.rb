@@ -18,4 +18,8 @@ describe Dice do
   it 'returns an integer when rolled' do
     expect(subject.roll).to be_a(Integer)
   end
+
+  it 'returns a number between 1 and 6' do
+    expect(subject.roll).to be_between(1,6)
+  end
 end
