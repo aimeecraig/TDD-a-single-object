@@ -14,4 +14,8 @@ describe Dice do
   it 'responds to the roll method' do
     expect(subject).to respond_to :roll
   end
+
+  it 'returns an integer when rolled' do
+    expect(subject.roll).to be_a(Integer)
+  end
 end
