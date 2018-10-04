@@ -22,4 +22,10 @@ describe Dice do
   it 'returns a number between 1 and 6' do
     expect(subject.roll).to be_between(1,6)
   end
+
+  it 'returns a random number between 1 and 6' do
+    rolls = []
+    20.times { rolls << subject.roll }
+    expect(rolls).to all( be_between(1,6) )
+  end
 end
