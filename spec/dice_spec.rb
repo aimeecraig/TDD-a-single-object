@@ -40,7 +40,6 @@ describe Dice do
   end
 
   it 'returns a random number' do
-    srand(1337)
     expect(subject.roll).to eq 6
     expect(subject.roll).to eq 5
     expect(subject.roll).to eq 1
