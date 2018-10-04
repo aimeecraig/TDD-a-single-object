@@ -30,4 +30,12 @@ describe Dice do
   it 'raises an error when Dice.roll is passed 0' do
     expect{subject.roll(0)}.to raise_error("Dice has not been rolled")
   end
+
+  it 'raises an error when Dice.roll is passed a negative number' do
+    expect{subject.roll(-1)}.to raise_error("Dice cannot be rolled negative times")
+  end
+
+  it 'raises an error when Dice.roll is passed a floating point number' do
+    expect{subject.roll(3.5)}.to raise_error("Dice cannot be rolled partial times")
+  end
 end
