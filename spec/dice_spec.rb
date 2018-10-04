@@ -26,4 +26,8 @@ describe Dice do
   it 'returns a number of dice rolls' do
     expect(subject.roll(3)).to be_a(Array)
   end
+
+  it 'raises an error when Dice.roll is passed 0' do
+    expect{subject.roll(0)}.to raise_error("Dice has not been rolled")
+  end
 end
